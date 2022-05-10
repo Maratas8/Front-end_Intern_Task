@@ -18,8 +18,10 @@ function List() {
 
   if (!loading) {
     return (
-      <div>
-        <ListItem />
+        <div className="">
+        {countries.map((country, index) => (
+          <ListItem key={index} name={country.name} region={country.region} area={country.area}/>
+        ))}
       </div>
     );
   } else {
