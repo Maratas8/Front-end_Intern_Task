@@ -94,7 +94,7 @@ function List() {
   if (!loading) {
     return (
       <div>
-        <div className="flex justify-between">
+        <div className="flex justify-between sticky top-0">
           <div className="flex">
             <Button text="Smaller than Lithuania" onClick={filterSmaller} className={smallerCountriesButton ? "bg-emerald-400" : "bg-emerald-700"}/>
             <Button text="Is in Oceania" onClick={filterOceania} className={oceaniaButton ? "bg-emerald-400" : "bg-emerald-700"}/>
